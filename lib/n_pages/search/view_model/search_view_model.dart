@@ -45,8 +45,8 @@ class NewSearchViewModel extends _$NewSearchViewModel {
         searchLis.addAll(itemList);
         if (searchLis.isEmpty) {
           searchState.netState = NetState.emptyDataState;
-          state = AsyncData(searchState);
-          return;
+          //state = AsyncData(searchState);
+          continue;
         }
         searchState.searchList = searchLis;
         searchState.netState = NetState.dataSuccessState;
